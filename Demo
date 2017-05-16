@@ -1,0 +1,30 @@
+/**
+ * 
+ */
+package started;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+/**
+ * @author AKULA
+ *
+ */
+public class DemoL {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.gecko.driver","F:\\Gecko\\geckodriver");
+		
+		WebDriver dr=new FirefoxDriver();
+		dr.get("http://www.espncricinfo.com/");
+		dr.manage().window().maximize();
+		dr.quit();
+
+	}
+
+}
